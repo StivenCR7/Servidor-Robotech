@@ -56,7 +56,7 @@ public class WebSecurityConfig {
         config.setAllowCredentials(true);
         config.setAllowedOrigins(Arrays.asList(
             "http://localhost:5173",
-            "https://c4c3-190-42-31-24.ngrok-free.app" // URL del frontend
+            "https://torneorobotech-dzawctb0axeggxe7.brazilsouth-01.azurewebsites.net" // URL del frontend
         ));
         config.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type", "Accept"));
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
