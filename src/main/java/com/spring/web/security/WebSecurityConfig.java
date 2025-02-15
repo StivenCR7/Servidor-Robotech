@@ -56,7 +56,7 @@ public class WebSecurityConfig {
         config.setAllowCredentials(true);
         config.setAllowedOrigins(Arrays.asList(
             "http://localhost:5173",
-            "https://app-robfront-bbe6bdbebbdpavc2.brazilsouth-01.azurewebsites.net" // URL del frontend
+            "https://thankful-ground-024179f0f.4.azurestaticapps.net/" // URL del frontend
         ));
         config.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type", "Accept"));
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
