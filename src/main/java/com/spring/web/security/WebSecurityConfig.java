@@ -32,8 +32,8 @@ public class WebSecurityConfig {
         http.cors(withDefaults()).csrf(csrf -> csrf.disable())
                 .addFilterAfter(new JWTFilter(), UsernamePasswordAuthenticationFilter.class)
                 .authorizeHttpRequests(requests -> requests            
-                        .requestMatchers(HttpMethod.POST, "/login").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/register").permitAll()
+                        .requestMatchers("/login").permitAll()
+                        .requestMatchers("/register").permitAll()
                         .requestMatchers("/clubes/listar").hasAnyRole("RepresentanteClub","Verificador de Solicitudes")   
                         .requestMatchers("/clubes/add").permitAll()
                         .requestMatchers("/noticias/listar").permitAll()
